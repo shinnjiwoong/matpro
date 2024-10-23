@@ -1,3 +1,4 @@
+@charset "UTF-8";
 html {
   font-size: 16px;
 }
@@ -6,6 +7,23 @@ body {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+}
+
+/* 공통 클래스 정의 */
+.font-xl {
+  font-size: 2rem;
+}
+
+.font-l {
+  font-size: 1.5rem;
+}
+
+.font-m {
+  font-size: 1rem;
+}
+
+.font-s {
+  font-size: 0.875rem;
 }
 
 header {
@@ -56,4 +74,25 @@ footer p {
   width: -webkit-fill-available;
   height: auto;
   padding: 40px;
+}
+
+.contents-container {
+  padding-top: 15vh;
+}
+.contents-container .title-container {
+  display: flex;
+  justify-content: center;
+}
+.contents-container .title-container span {
+  font-size: 2rem;
+  background-color: #000;
+  color: #fff;
+  padding: 10px 20px 6px;
+  border-radius: 50px;
+}
+.contents-container .content-container {
+  display: grid;
+  padding: 0 5vw;
+  margin-top: 5vh;
+  grid-template-columns: repeat(2, 1fr);
 }/*# sourceMappingURL=style.css.map */
