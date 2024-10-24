@@ -11,7 +11,7 @@ body {
 
 /* 공통 클래스 정의 */
 .font-xl {
-  font-size: 2rem;
+  font-size: 1.8rem;
 }
 
 .font-l {
@@ -19,7 +19,8 @@ body {
 }
 
 .font-m {
-  font-size: 1rem;
+  font-size: 1.2rem;
+  line-height: 140%;
 }
 
 .font-s {
@@ -35,17 +36,31 @@ header {
   left: 0;
   right: 0;
   padding: 20px;
+  background-color: #fff;
   z-index: 99999;
+}
+header img {
+  width: 75%;
 }
 header #menu-container ul {
   display: flex;
-  gap: 20px;
+  gap: 10px;
   margin: 0;
 }
-header #menu-container ul li {
+header #menu-container ul a {
+  background-color: #000;
+  color: #fff;
+  padding: 10px 20px 6px;
+  text-decoration: none;
+}
+header #menu-container ul a:hover {
+  background-color: #fff;
+  color: #000;
+}
+header #menu-container ul a li {
   list-style: none;
-  font-size: 2rem;
-  font-weight: 600;
+  font-size: 1.2rem;
+  font-weight: 400;
   text-transform: uppercase;
 }
 
@@ -58,6 +73,9 @@ footer {
   justify-content: space-between;
   align-items: end;
   padding: 20px;
+}
+footer img {
+  width: 5%;
 }
 footer p {
   margin: 0;
@@ -73,7 +91,7 @@ footer p {
 #main-container #logo-video {
   width: -webkit-fill-available;
   height: auto;
-  padding: 40px;
+  padding: 200px;
 }
 
 .contents-container {
@@ -81,18 +99,53 @@ footer p {
 }
 .contents-container .title-container {
   display: flex;
-  justify-content: center;
+  justify-content: start;
+  margin: 0 5vw;
+  border-bottom: 1px solid #000;
 }
 .contents-container .title-container span {
-  font-size: 2rem;
-  background-color: #000;
-  color: #fff;
-  padding: 10px 20px 6px;
-  border-radius: 50px;
+  font-size: 4rem;
+  color: #000;
 }
 .contents-container .content-container {
   display: grid;
   padding: 0 5vw;
-  margin-top: 5vh;
+  padding-bottom: 10vh;
+  margin-top: 2.5vh;
+  gap: 80px;
   grid-template-columns: repeat(2, 1fr);
+}
+.contents-container .content-container.column {
+  grid-template-columns: 1fr;
+  gap: 0;
+}
+.contents-container .content-container .flex {
+  display: flex;
+  gap: 40px;
+}
+.contents-container .content-container .flex p {
+  margin: 10px 0;
+}
+.contents-container .content-container .text-wrapper {
+  word-break: keep-all;
+  white-space: normal;
+  margin-bottom: 20px;
+  line-height: 140%;
+}
+.contents-container .content-container .content-item.center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.contents-container .content-container .content-item #logo-video {
+  width: 100%;
+  height: auto;
+}
+.contents-container .content-container .button {
+  display: inline-block;
+  padding: 10px 20px 7px 20px;
+  background-color: #000;
+  border-radius: 5px;
+  color: #fff;
+  text-decoration: none;
 }/*# sourceMappingURL=style.css.map */
