@@ -66,6 +66,12 @@ header #menu-container ul.sub-menu a {
   border-radius: 30px;
   padding: 6px 20px 3px;
 }
+header #menu-container ul.sub-menu a.no-link {
+  pointer-events: none;
+}
+header #menu-container ul.sub-menu a:hover {
+  background-color: #40d2ff;
+}
 header #menu-container ul.sub-menu a li {
   font-size: 1rem;
 }
