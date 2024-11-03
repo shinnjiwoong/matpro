@@ -42,10 +42,30 @@ header{
         width: 75%;
     }
     #menu-container{
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
         ul{
             display: flex;
             gap: 10px;
             margin: 0;
+            &.sub-menu{
+                &.show{
+                    display: flex;
+                    flex-wrap: wrap;
+                }
+                display: none;
+                a{
+                    background-color: #fff;
+                    color: #000;
+                    border: 1px solid #000;
+                    border-radius: 30px;
+                    padding: 6px 20px 3px;
+                    li{
+                        font-size: 1rem;
+                    }
+                }
+            }
             a{
                 background-color: #000;
                 color: #fff;
@@ -60,11 +80,12 @@ header{
                     font-size: 1.2rem;
                     font-weight: 400;
                     text-transform: uppercase;
-    
+                    pointer-events: none;
                 }
             }
 
         }
+
     }
 }
 

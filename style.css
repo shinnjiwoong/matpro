@@ -42,10 +42,32 @@ header {
 header img {
   width: 75%;
 }
+header #menu-container {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
 header #menu-container ul {
   display: flex;
   gap: 10px;
   margin: 0;
+}
+header #menu-container ul.sub-menu {
+  display: none;
+}
+header #menu-container ul.sub-menu.show {
+  display: flex;
+  flex-wrap: wrap;
+}
+header #menu-container ul.sub-menu a {
+  background-color: #fff;
+  color: #000;
+  border: 1px solid #000;
+  border-radius: 30px;
+  padding: 6px 20px 3px;
+}
+header #menu-container ul.sub-menu a li {
+  font-size: 1rem;
 }
 header #menu-container ul a {
   background-color: #000;
@@ -62,6 +84,7 @@ header #menu-container ul a li {
   font-size: 1.2rem;
   font-weight: 400;
   text-transform: uppercase;
+  pointer-events: none;
 }
 
 footer {
